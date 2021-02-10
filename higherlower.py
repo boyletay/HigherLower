@@ -1,5 +1,3 @@
-# TO DO:
-# IMPORTS: Random, game data, logo, vs
 from random import randint
 from game_data import data
 from art import logo, vs
@@ -13,6 +11,7 @@ def check_guess(answer, a_followers, b_followers):
     return answer == 'a'
   else:
     return answer == 'b'
+    
 print(logo) 
 score = 0
 game_repeat = True
@@ -50,17 +49,3 @@ while game_repeat:
   else:
     game_repeat = False
     print(f"You are wrong. Final score: {score}")
-
-
-# if correct, move former B to A and bring in a new B
-
-# if inccorect,  end game and show final score
-
-# score variable that counts correct answers
-# tally current score with each new matchup
-
-# print " who has more followers? A or B " user input
-
-# print logo (art) copy/paste or import for art.py?
-
-# print vs (art) copy/paste or import for art.py?
